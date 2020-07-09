@@ -90,6 +90,10 @@ app.get("/:customListName",(req,res)=>{
 app.post("/create",(req,res)=>{
   
   const customListName = _.capitalize(req.body.createList);
+  // if(customListName === "Today"){
+  //   console.log("you are in today");
+  //   res.redirect("/");
+  // }
   List.findOne({name:customListName},(err,foundList)=>{
     if(!err){
       if(!foundList){
