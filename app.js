@@ -90,13 +90,10 @@ app.get("/:customListName",(req,res)=>{
 app.post("/create",(req,res)=>{
   
   const customListName = _.capitalize(req.body.createList);
-  // if(customListName === "Today"){
-  //   console.log("you are in today");
-  //   res.redirect("/");
-  // }
+  
   List.findOne({name:customListName},(err,foundList)=>{
     if(!err){
-      if(!foundList){
+      if(customListName !== "Today" && !foundList){
         //create a new list
         const list=new List({
           name:customListName,
@@ -106,10 +103,13 @@ app.post("/create",(req,res)=>{
         //console.log("New: "+customListName);
         res.redirect("/"+customListName);
       }
-      else{
+      else if(customListName !== "Today"){
         //show existing list
         //console.log("Existing: "+foundList.name);
         res.render("list",{listTitle: foundList.name, newlistItem: foundList.items});
+      }
+      else{
+        res.redirect("/");
       }
     }
   });
