@@ -2,7 +2,7 @@
 version 2 backend included
 #Read completely before you proceed.</br>
 <b>#Runs on port 3000</b></br>
-<b>You can make it live by deploying it with heroku(follow the steps mentioned in heroku documentation.)</b>
+<b>You can make it live by deploying it with heroku(follow the steps mentioned in heroku documentation)</b></br>
 <b>I hosted it on heroku.Refer this link:</b><a href="https://warm-retreat-77402.herokuapp.com/">Todo</a></br>
 
 
