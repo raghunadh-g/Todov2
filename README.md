@@ -7,7 +7,7 @@ version 2 backend included
 
 
 1.Make sure node js is installed on your computer(optional:install nodemon also).</br>
-2.Make sure the directory into which you clone this  project has express,body-parser,lodash and ejs installed.<b>Simply click npm i in your gitbash this automatically checks and installs required  packages</b></br> 
+2.Make sure the directory into which you clone this  project has express,body-parser,lodash and ejs installed.<b>Simply click npm i in your gitbash being in the project directory this automatically checks and installs required  packages</b></br> 
 3.Also,Install mangodb(and create a cluster on MongoDB Atlas) and mongoose(check dependencies in package.json and install all those packages).</br>
 3.While initializing (i.e., npm init) set start point as app.js</br>
 4.This is the version 2 of the website.</br>
